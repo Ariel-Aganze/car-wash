@@ -1,0 +1,10 @@
+car_wash_db
+
+CREATE TABLE bookings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    serviceType VARCHAR(255),
+    clientName VARCHAR(255),
+    agentName VARCHAR(255),
+    price DECIMAL(10, 2),
+    date DATE
+);

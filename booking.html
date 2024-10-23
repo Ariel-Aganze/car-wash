@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>TM carwash</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+        <!-- Favicon -->
+        <link href="img/carwash.png" rel="icon">
+         
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="logo">
+                            <a href="index.html">
+                                <h1>TM <span>CarWash</span></h1>
+                                <!-- <img src="img/carwash.png" alt="Logo"> -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="far fa-clock"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Opening Hour</h3>
+                                        <p>Mon - Fri, 8:00 - 9:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="fa fa-phone-alt"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Call Us</h3>
+                                        <p>+250 790 003 480</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="far fa-envelope"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Email Us</h3>
+                                        <p>tmcarwash@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Service</a>
+                            <a href="price.html" class="nav-item nav-link">Price</a>
+                            <a href="location.html" class="nav-item nav-link">Washing Points</a>
+                            <a href="booking.html" class="nav-item nav-link" >Bookings</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                       
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Booking Records</p>
+                <h2>Manage Bookings</h2>
+            </div>
+        
+            <div class="form-group">
+                <label for="discountSelect">Apply Discount (%):</label>
+                <select id="discountSelect" class="form-control">
+                    <option value="0">No Discount</option>
+                    <option value="10">10%</option>
+                    <option value="20">20%</option>
+                    <option value="30">30%</option>
+                    <option value="40">40%</option>
+                    <option value="50">50%</option>
+                    <option value="60">60%</option>
+                    <option value="70">70%</option>
+                    <option value="80">80%</option>
+                </select>
+            </div>
+        
+            <div class="form-group">
+                <label for="monthSelect">Select Month:</label>
+                <select id="monthSelect" class="form-control">
+                    <option value="all">All Months</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+            </div>
+        
+            <table id="bookingsTable" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Service Type</th>
+                        <th>Client Name</th>
+                        <th>Agent Name</th>
+                        <th>Price </th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Bookings will be inserted here -->
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#" id="prevPage">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#" id="nextPage">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+         <!-- Footer Start -->
+         <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-contact">
+                            <h2>Get In Touch</h2>
+                            <p><i class="fa fa-map-marker-alt"></i>KG 566 ST, Remera, Gasabo, Kigali</p>
+                            <p><i class="fa fa-phone-alt"></i>+250 790 003 480</p>
+                            <p><i class="fa fa-envelope"></i>tmcarwash@gmail.com</p>
+                            <div class="footer-social">
+                                <a class="btn" href="https://x.com/AUCA_Rwanda"><i class="fab fa-twitter"></i></a>
+                                <a class="btn" href="https://www.facebook.com/AUCA.RW"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn" href="https://www.youtube.com/@aucarwanda3405"><i class="fab fa-youtube"></i></a>
+                                <a class="btn" href="https://www.instagram.com/aucarwanda/"><i class="fab fa-instagram"></i></a>
+                                <a class="btn" href="https://www.linkedin.com/groups/9500600/"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-link">
+                            <h2>Popular Links</h2>
+                            <a href="about.html">About Us</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="service.html">Our Service</a>
+                            <a href="location.html">Service Points</a>
+                            <a href="price.html">Pricing Plan</a>
+                            <a href="booking.html">Bookings</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-link">
+                            <h2>Useful Links</h2>
+                            <a href="">Terms of use</a>
+                            <a href="">Privacy policy</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-newsletter">
+                            <h2>Newsletter</h2>
+                            <form>
+                                <input class="form-control" placeholder="Full Name">
+                                <input class="form-control" placeholder="Email">
+                                <button class="btn btn-custom">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Back to top button -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const discountSelect = document.getElementById('discountSelect');
+                const monthSelect = document.getElementById('monthSelect');
+                const bookingsTableBody = document.getElementById('bookingsTable').querySelector('tbody');
+                const prevPage = document.getElementById('prevPage');
+                const nextPage = document.getElementById('nextPage');
+    
+                let bookings = [];
+                let currentPage = 1;
+                const recordsPerPage = 5;
+    
+                // Fetch bookings from the API
+                async function fetchBookings() {
+                    try {
+                        const response = await fetch('http://localhost:3000/bookings'); // Node.js server URL
+                        bookings = await response.json();
+                        displayBookings();
+                    } catch (error) {
+                        console.error('Error fetching bookings:', error);
+                    }
+                }
+    
+                // Display bookings in the table with pagination
+                function displayBookings() {
+                    bookingsTableBody.innerHTML = '';
+    
+                    const discount = parseInt(discountSelect.value, 10);
+                    const selectedMonth = monthSelect.value;
+                    const filteredBookings = bookings.filter(booking => {
+                        const bookingDate = new Date(booking.date);
+                        const bookingMonth = bookingDate.getMonth() + 1;
+    
+                        // Filter by month
+                        return selectedMonth === 'all' || parseInt(selectedMonth, 10) === bookingMonth;
+                    });
+    
+                    const startIndex = (currentPage - 1) * recordsPerPage;
+                    const endIndex = startIndex + recordsPerPage;
+                    const bookingsToDisplay = filteredBookings.slice(startIndex, endIndex);
+    
+                    bookingsToDisplay.forEach(booking => {
+                        const discountedPrice = booking.price - (booking.price * discount / 100);
+                        const row = `
+                            <tr>
+                                <td>${booking.serviceType}</td>
+                                <td>${booking.clientName}</td>
+                                <td>${booking.agentName}</td>
+                                <td>${discountedPrice.toFixed(2)}</td>
+                                <td>${booking.date}</td>
+                            </tr>
+                        `;
+                        bookingsTableBody.insertAdjacentHTML('beforeend', row);
+                    });
+    
+                    updatePaginationControls(filteredBookings.length);
+                }
+    
+                // Update the pagination controls
+                function updatePaginationControls(totalRecords) {
+                    const totalPages = Math.ceil(totalRecords / recordsPerPage);
+                    prevPage.parentElement.classList.toggle('disabled', currentPage === 1);
+                    nextPage.parentElement.classList.toggle('disabled', currentPage === totalPages);
+                }
+    
+                // Event listeners for filter changes
+                discountSelect.addEventListener('change', displayBookings);
+                monthSelect.addEventListener('change', displayBookings);
+                prevPage.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    if (currentPage > 1) {
+                        currentPage--;
+                        displayBookings();
+                    }
+                });
+                nextPage.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const totalPages = Math.ceil(bookings.length / recordsPerPage);
+                    if (currentPage < totalPages) {
+                        currentPage++;
+                        displayBookings();
+                    }
+                });
+    
+                // Initial fetch and display of bookings
+                fetchBookings();
+            });
+        </script>
+
+
+    </body>
+</html>
